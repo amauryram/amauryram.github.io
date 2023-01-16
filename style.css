@@ -1,0 +1,227 @@
+html{
+    /*width: 1440px;
+    height: 480px;
+    */
+}
+
+body{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    background: #F3F5FC;
+    width: 90%;
+    margin: 0 auto
+
+}
+
+
+.logo-alura{
+    margin: 15px;
+    width: 5%;
+}
+
+.formulario{
+    text-align: center;
+    width: auto 90%;
+}
+
+.formulario textarea{
+    display: block;
+    margin: 40px auto 10% auto;
+    background-color: transparent;
+    border: none;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: large;
+    resize: none;
+    width: 70%;
+}
+
+.formulario textarea:focus{
+    border: none;
+    border-style: none;
+}
+
+.advertencia{
+    display: flex;
+    gap: 5px;
+    margin: 10px auto;
+}
+
+.imagenAdv{
+    width: 12px;
+    display: inline;
+    margin-left: 15%;
+}
+
+.formulario legend{
+    font-size: smaller;
+
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF; 
+    border-style: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    width: 35%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.boton-encriptar:hover{
+    background-color:white;
+    color:#0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-width: thin;
+    transform: scale(1.05);
+}
+
+.boton-desencriptar{
+    border-color: #0A3871;
+    border-width: thin;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.boton-desencriptar:hover, #btnCopiar:hover{
+    background-color: white;
+    color: #0A3871;
+    transform: scale(1.05);
+}
+
+
+
+.barra-derecha{
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10%;
+    box-shadow: 0 0 10px gray;
+}
+
+.muneco{
+    width: 80%;
+    margin-top: 45%;
+}
+
+.leyenda{
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+.aviso{
+    color: #343A40;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+
+#btnCopiar{
+    border-color: #0A3871;
+    border-width: thin;
+    display:none;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .formulario textarea{
+        margin: 30px auto;
+    
+    }
+
+    .barra-derecha{
+        margin: 30px;
+    }
+
+    .muneco{
+        display:none !important;
+    }
+    
+    
+
+    .leyenda{
+        margin: 10px auto;
+    }
+
+    #btnCopiar{
+        margin: auto auto 10px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .boton-encriptar{    
+        background-color: #0A3871;
+        color: #FFFFFF;
+        border-style: none;
+        border-radius: 10px;
+        padding: 15px;
+        outline: none;
+        width: 90%;
+        cursor: pointer;
+
+    }
+    
+    .boton-desencriptar{
+        background-color: #D8DFE8;
+        color: #0A3871;
+        border-style: none;
+        border-radius: 10px;
+        padding: 15px;
+        width: 90%;
+        margin: 10px 0px;
+        cursor: pointer;
+        
+    }
+
+    .aviso{
+        font-size: larger;
+        padding: 15px;
+    }
+
+    .resultado{
+        padding: 15px;
+    }
+    
+
+
+}
+
+.firma{
+    font-size: 10px;
+    text-align: right;
+    margin: 10px 0px;
+
+}

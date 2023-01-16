@@ -1,1 +1,41 @@
-hola mundo
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>01_Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <section class="barra-izquierda">
+            <a href="https:\\www.linkedin.com/in/amauryramirez"><img class="logo-alura" src="Imagenes/Vector.png" alt="logo-alura.jpg"></a>
+            <form class="formulario">
+                <textarea required rows="15" id="mensaje" placeholder="Escribe aqui tu mensaje en minusculas y sin caracteres especiales" ></textarea>
+                <div class="advertencia">
+                    <img class="imagenAdv" src="Imagenes/VectorAdv.png" alt="VectorAdv.png">
+                    <legend>Solo letras minúsculas y sin acentos</legend>    
+                </div>
+                <input type="button" value="Encriptar" onclick="encriptar()" class="boton-encriptar">
+                <input type="button" value="Desencriptar" onclick="desencriptar()" class="boton-desencriptar">
+            </form>
+        </section>
+        <section class="barra-derecha">
+            <div class="contenedor">
+                <img class="muneco"  src="Imagenes/Muñeco.png" alt="imagen-muñeco.jpg">
+                <div class="leyenda">
+                    <p id="avisoid" class="aviso">Ningún mensaje fue enviado</p>
+                    <p id="muestraMensaje" class="resultado">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <form action="formulario">
+                    <input type="button" class="Copiar" onclick="copiarPortapapeles();" id="btnCopiar" value="Copiar">
+                </form>
+            </div>        
+        </section>
+        <div></div>
+        <footer>
+            <p class="firma">Desarrollado por: <a href="https:\\www.linkedin.com/in/amauryramirez">Amaury Ramirez</a></p>
+        </footer>
+    </body>
+</html>
